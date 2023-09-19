@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: block;
+}
+#profile{
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    border-right: 1px solid lightgray;
+}
+.fixed{
+    padding: 150px 50px;
+}
+.img{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+.img img{
+    width: 25vh;
+    height: auto;
+}
+.text{
+    position: absolute;
+    top: 45%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1.5em;
+    text-align: center;
+}
