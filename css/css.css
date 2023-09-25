@@ -10,6 +10,8 @@ header{
     height: 100%;
     overflow: hidden;
     position: fixed;
+    margin: 0;
+    padding: 0;
     border-right: 1px solid lightgray;
 }
 .fixed{
@@ -18,17 +20,35 @@ header{
 .img{
     position: absolute;
     top: 20%;
-    left: 50%;
+    left: 20%;
 }
 .img img{
-    width: 25vh;
-    height: auto;
+    width: auto;
+    height: 15vw;
 }
 .text{
     position: absolute;
-    top: 45%;
+    top: 55%;
+    left: 5%;
     padding-left: 5%;
     padding-right: 5%;
     font-size: 1.5em;
     text-align: center;
+}
+.resume{
+    padding-left: 25%;
+    width: 75%;
+    height: 100%;
+}
+.info{
+    padding: 50px;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0;
+}
+.part1, .part2{
+    float: left;
+    width: 50%;
+    height: auto;
+    display: block;
 }
