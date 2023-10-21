@@ -4,6 +4,10 @@
     font-weight: 700;
     font-style: normal;
 }
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
 *{
     font-family: 'TheJamsil5Bold';
     margin: 0;
@@ -41,16 +45,11 @@ header{
     font-size: 1.5em;
     text-align: center;
 }
-.info{
-    scroll-snap-type: y proximity;
-    height: 100%;
-    width: 100%;
-}
-section{
+#area1, #area2, #area3{
     padding-left: 20%;
-    width: 70%;
+    width: 80%;
     height: 100vh;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
 }
 h1{
     padding: 50px;
@@ -109,11 +108,10 @@ h1{
 .gauge.jsp{
     width: 90%;
 }
-
-
-#area2{
-    background-color: lightgreen;
+a{
+    text-decoration: none;
+    color: green;
 }
-#area3{
-    background-color: grey;
+a:hover{
+    color: red;
 }
