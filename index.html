@@ -1,85 +1,83 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
-    <link rel="stylesheet" href="css/css.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>이우승 포트폴리오</title>
-    <script>
-        window.onload=alert("가독성으로 인해 PC환경에서 보시는걸 추천합니다.")
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이우승 | 포트폴리오</title>
+  <meta name="description" content="Python 기반 디스코드 봇·웹앱·앱 개발자 이우승의 포트폴리오">
+  <link rel="stylesheet" href="css/css.css">
 </head>
-
 <body>
-    <header id="profile">
-        <div class="fixed">
-            <div class="img">
-                <img src="img/profile.jpg">
-            </div>
-            <div class="text">
-                <p>이름 : 이우승</p>
-                <p>생년월일 : 2000.11.08.</p>
-                <p>이메일 : lws302@naver.com</p>
-                <p><a href = "https://guthub.com/10000sun" target="_blank">깃허브</a>&nbsp;
-                    <a href = "https://10000sun.tistory.com" target="_blank">블로그</a></p>
-            </div>
-        </div>
-    </header>
-    <div class="info">
-        <section id="area1">
-            <h1>기술소개</h1>
-            <div class="progressbar">
-                <p>HTML</p>
-                <div class="bar">
-                    <div class="gauge html"></div>
-                </div> <span class="percent">95%</span>
-                <p>자바스크립트</p>
-                <div class="bar">
-                    <div class="gauge js"></div>
-                </div> <span class="percent">92%</span>
-                <p>Css</p>
-                <div class="bar">
-                    <div class="gauge css"></div>
-                </div> <span class="percent">90%</span>
-                <p>파이썬</p>
-                <div class="bar">
-                    <div class="gauge py"></div>
-                </div> <span class="percent">83%</span>
-                <p>자바</p>
-                <div class="bar">
-                    <div class="gauge java"></div>
-                </div> <span class="percent">85%</span>
-                <p>MySQL(MariaDB)</p>
-                <div class="bar">
-                    <div class="gauge mysql"></div>
-                </div> <span class="percent">93%</span>
-                <p>C</p>
-                <div class="bar">
-                    <div class="gauge c"></div>
-                </div> <span class="percent">70%</span>
-                <p>JSP</p>
-                <div class="bar">
-                    <div class="gauge jsp"></div>
-                </div> <span class="percent">90%</span>
-            </div>
-        </section>
-        <section id="area2">
-            <h1>포트폴리오</h1>
-            <div class="bikeaccident">
-                <div class="bikeimg">
-                    <img src="img/thumbnail.png">
-                </div>
-                <div class="black">
-                    <a href="https://10000sun.github.io/bike-accident" target="_blank" title="웹사이트로 이동"><img src="img/arrow.png" class="gopage"></a>
-                    <a href="https://github.com/10000sun/bike-accident" target="_blank" title="깃허브 소스코드로 이동"><img src="img/github.png" class="gogithub"></a>
-                </div>   
-            </div>
-            <div class="discription">
-                <p>자바스크립트로 제작한 자전거 사고가 많이 일어나는 지역을 찾는 웹사이트 입니다.</p>
-            </div>
-        </section>
+  <header class="hero">
+    <img src="img/profile.jpg" alt="이우승 프로필 사진" class="avatar">
+    <div>
+      <h1>이우승</h1>
+      <p class="lead">Python으로 디스코드 봇과 웹앱을 만들고, 주문받아 납품합니다.</p>
+      <p class="links">
+        <a href="https://github.com/10000sun" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://10000sun.tistory.com" target="_blank" rel="noopener">블로그</a>
+        <a href="mailto:lws302@naver.com">lws302@naver.com</a>
+      </p>
     </div>
-</body>
+  </header>
 
+  <main>
+    <section>
+      <h2>사용 기술</h2>
+      <ul class="tags">
+        <li>Python</li><li>JavaScript</li><li>TypeScript</li><li>Kotlin</li>
+        <li>Java / JSP</li><li>MySQL</li><li>HTML · CSS</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>프로젝트</h2>
+      <div class="cards">
+        <a class="card" href="https://github.com/10000sun/bot-module" target="_blank" rel="noopener">
+          <h3>bot-module</h3>
+          <p>주문제작용 모듈형 디스코드 봇 프레임워크. 기능을 모듈 단위로 골라 담아 납품하고, CI로 검증합니다.</p>
+          <span>Python · discord.py</span>
+        </a>
+        <a class="card" href="https://github.com/10000sun/maribot-core" target="_blank" rel="noopener">
+          <h3>maribot-core</h3>
+          <p>실제 서버에서 운영 중인 디스코드 경제 봇(지갑·송금·주식·복권)의 핵심 모듈 발췌본. 테스트 포함.</p>
+          <span>Python · pytest</span>
+        </a>
+        <a class="card" href="https://github.com/10000sun/maribot-demo" target="_blank" rel="noopener">
+          <h3>maribot-demo</h3>
+          <p>마리봇의 슬래시 명령어를 디스코드에 들어가지 않고 브라우저에서 체험해 보는 웹 데모.</p>
+          <span>Node.js · Express</span>
+        </a>
+        <a class="card" href="https://github.com/10000sun/evas-memo" target="_blank" rel="noopener">
+          <h3>evas-memo</h3>
+          <p>여러 명이 동시에 고치는 실시간 공동 편집 메모 웹앱. 마크다운, 폴더, @ 태그 지원.</p>
+          <span>Python 웹앱</span>
+        </a>
+        <a class="card" href="https://github.com/10000sun/dinnerpad" target="_blank" rel="noopener">
+          <h3>dinnerpad</h3>
+          <p>인터넷 없이 쓰는 PC용 런치패드 사운드보드. 전역 단축키와 Windows 설치 파일 배포.</p>
+          <span>JavaScript · Windows</span>
+        </a>
+        <a class="card" href="https://github.com/10000sun/walkytalky" target="_blank" rel="noopener">
+          <h3>walkytalky</h3>
+          <p>산책 시간을 입력하면 현재 위치에서 왕복 산책 경로를 만들어 주는 모바일 앱.</p>
+          <span>TypeScript · React Native</span>
+        </a>
+        <a class="card" href="https://github.com/10000sun/napolitan-game" target="_blank" rel="noopener">
+          <h3>napolitan-game</h3>
+          <p>나폴리탄 괴담을 옮긴 웹 게임. 누구나 fork 해서 Cloudflare 무료 플랜으로 자기 방을 띄울 수 있습니다.</p>
+          <span>JavaScript · Cloudflare</span>
+        </a>
+        <a class="card" href="https://10000sun.github.io/bike-accident" target="_blank" rel="noopener">
+          <img src="img/thumbnail.png" alt="자전거 사고 다발 지역 사이트 미리보기">
+          <h3>bike-accident <small>(2023)</small></h3>
+          <p>공공데이터 API로 자전거 사고 다발 지역을 지역별로 보여주는 사이트. 첫 공개 프로젝트입니다.</p>
+          <span>JavaScript · 공공데이터</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 이우승 · <a href="https://github.com/10000sun/portfolio" target="_blank" rel="noopener">이 페이지 소스</a></footer>
+</body>
 </html>
